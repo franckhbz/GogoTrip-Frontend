@@ -1,0 +1,100 @@
+
+body {
+    background-color: #F4E9CD; /* Cambia el color de fondo según tu preferencia */
+    font-family:"Roboto"
+}
+.navbar-light {
+    position: fixed; 
+    top: 0; 
+    left: 0;
+    right: 0;
+    background-color: #468189;
+    color: #fff; 
+    padding: 10px 20px; 
+    z-index: 1000;
+}
+.footer{
+    background-color: #468189;
+    margin-top: 20px;
+}
+.word {
+    font-size: 60px; /* Ajusta el tamaño de fuente según tu preferencia */
+    text-align: left;
+    line-height: 1.2; /* Ajusta el espaciado entre líneas (line-height) según tu preferencia */
+    font-weight: bolder;
+
+}
+.descripcion{
+    font-size: 18px;
+    font-weight:600;
+}
+.discount-text {
+    text-align: left;
+    font-size: 64px;
+    font-weight:bolder; /* Opcional: para hacer el texto en negrita */
+    margin-top:-50px;
+}
+
+.image-container {
+    margin-top: 150px;
+    max-width: 100%;
+    text-align: center; 
+}
+.content-container {
+    display: flex;
+    align-items: center;
+}
+.word:nth-child(1) {
+    color: #031926;
+}
+
+.word:nth-child(2) {
+    color: #468189;
+}
+
+.word:nth-child(3) {
+    color: green;
+}
+
+.word:nth-child(4) {
+    color: orange;
+}
+
+.word:nth-child(5) {
+    color: purple;
+}
+.nav-link{
+    font-size: 20px; /* Ajusta el tamaño de fuente según tu preferencia */
+    font-weight:400;
+    color:#F4E9CD;
+}
+.btn-primary {
+    background-color: #031926; /* Cambia el color de fondo según tu preferencia */
+    border-color: #031926; /* Cambia el color del borde si es necesario */
+    color: #fff; /* Cambia el color del texto según tu preferencia */
+    font-weight:600;
+    padding: 10px;
+}
+.btn-primary:hover {
+    background-color: #468189; /* Nuevo color del botón al pasar el mouse */
+}
+.logo-image {
+    height: 100px; /* Altura deseada */
+}
+.textext{
+    color:#F4E9CD;
+}
+.textext2{
+    color:#468189;
+}
+ul {
+    list-style-type: none; 
+    padding: 0; 
+    margin: 0; 
+}   
+h4 {
+    color: #F4E9CD; 
+}
+.social-icons img {
+    height: 50px; /* Cambia el valor a la altura deseada en píxeles */
+}
