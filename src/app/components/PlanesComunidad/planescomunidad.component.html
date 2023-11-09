@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planes</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="planescomunidad.component.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
+</head>
+<body>
+<!-- encabezado     -->
+<nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img class="logo-image" src="assets\img\logoencabezado.png" alt="Logo de la Empresa" ></a>
+
+    <ul class="navbar-nav mx-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">INICIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/foro" routerLinkActive="active">FOROS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/planificacion" routerLinkActive="active" >PLANES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/perfil" routerLinkActive="active" >USUARIO</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/galeria" routerLinkActive="active" >GALERIA</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class="container mt-5">
+  <h1 class="text-start mb-5">Planes de la comunidad GogoTrips</h1>
+
+  <!-- Amazonas Section -->
+  <div class="destination">
+    <h2>Viaje a la catarata Gocta (Amazonas)</h2>
+    <div class="row">
+      <div class="col-md-7">
+
+        <img src="assets/img/amazonia.jpg" class="img-fluid rounded centered-image" alt="Amazonas">
+        <p>*Luego de efectuar el pago te podras unir al foro de viaje e interactuar con tus compañeros de viaje*</p>
+      </div>
+      <div class="col-md-5 description" text-center>
+        <p>Explora la biodiversidad de la Amazonía peruana.</p>
+        <p>Unete al plan de viaje junto a la comunidad Gogotrips</p>
+        <p>Paga tu vuelo:</p>
+        <img src= "assets/img/despegar.png" class="img-fluid" alt="Despegar.com">
+        <a href="https://www.despegar.com.pe/hoteles/h-966430/gocta-andes-lodge-chachapoyas?adjust_adgroup=62552205837&adjust_campaign=1641694711&adjust_t=ovd1mo_r45y7l_v9v5li&adjust_creative=460258303175&adjust_tracker_limit=1000000000&gad=1&gclid=Cj0KCQiAgK2qBhCHARIsAGACuzkunY2XB-vNBt4s-hfZkO2wGK6Vyhh9a19-9OyYtzzzWVFLPYt_WOsaAqdlEALw_wcB&mktdata=accountid%3D3063769488%26pr%3DH%26cc%3DPE%26adjust_t%3Dovd1mo_r45y7l_v9v5li%26kw%3D%26c%3D460258303175%26mt%3D%26n%3Dg%26p%3D%26ap%3D%26d%3Dc%26dm%3D%26targetid%3Daud-870839289776:dsa-576229548862%26campaignid%3D1641694711%26adgroupid%3D62552205837%26ExperimentId%3D%26locationid%3D9186213%26adjust_adgroup%3D62552205837%26adjust_campaign%3D1641694711%26adjust_creative%3D460258303175%26key%3DUT81AK9JAFEGJ4D69OVO6J673E%26adjust_tracker_limit%3D1000000000%26gclid%3DCj0KCQiAgK2qBhCHARIsAGACuzkunY2XB-vNBt4s-hfZkO2wGK6Vyhh9a19-9OyYtzzzWVFLPYt_WOsaAqdlEALw_wcB%26id%3D20231109035733149164859940335815%26trackeame_user_id%3D7885fdac-0371-41fc-85fd-ac0371b1fcc7" target="_blank">
+          <button class="btn btn-primary" id="loginBtn" >Pagar</button>
+        </a>
+
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="textext2">text</div>
+        <div class="information">
+          <a class="navbar-brand" href="#"><img class="logo-image" src="assets\img\logoencabezado.png" alt="Logo de la Empresa" ></a>
+        </div>
+      </div>
+      <div class="col-md-4">
+
+        <div class="contact">
+          <div class="textext2">text</div>
+          <p>Teléfono: 956 034182</p>
+          <p>Correo electrónico: GogoTrips@gmail.com</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="social">
+          <div class="textext2">text</div>
+          <h4>Redes Sociales</h4>
+          <div class="social-icons">
+            <a href="#" title="Enlace a Facebook"><img src="assets\img\facebook.png" alt="Facebook"></a>
+            <a href="#" title="Enlace a Twitter"><img src="assets\img\twitter.png" alt="Twitter"></a>
+            <a href="#" title="Enlace a Instagram"><img src="assets\img\instagram.png" alt="Instagram"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>
