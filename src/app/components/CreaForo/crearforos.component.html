@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Perfil</title>
+  <title>Crear nuevo tema</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="perfil.component.css">
+  <link rel="stylesheet" href="crearforos.component.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap">
 </head>
 <body>
@@ -34,31 +34,23 @@
     </ul>
   </div>
 </nav>
+
 <div class="container mt-5">
-  <h1 class="text-center mb-5">Perfil del Usuario</h1>
-  <h3>Datos Personales:</h3>
-  <p> Nombre:           {{ firstName }}</p>
-  <p>Apellidos:         {{ lastName }}</p>
-  <p>email:         {{ email }}</p>
-  <h3>Historial de foros y recomendacione</h3>
-  <div class="destination">
-    <h2>Mis Foros</h2>
-    <div class="row" *ngFor="let publication of publications">
-      <div class="col-12">
-        <div class="card mb-3">
-          <div class="card-body">
-            <h5 class="card-title">{{ publication.title }}</h5>
-            <p class="card-text">{{ publication.content }}</p>
-            <div class="d-flex justify-content-between">
-              <small class="text-muted">Posteado por dora</small>
-              <small class="text-muted">0 Respuestas - 0 Visitas - 23/11/2023</small>
-            </div>
-          </div>
+  <h1 class="text-center mb-5">Crear nuevo tema</h1>
+  <div class="row">
+    <div class="col-12">
+      <div class="card mb-3">
+        <input type="text" class="form-control-lg" [(ngModel)]="newPublication.title" placeholder="Titulo tema" aria-label="Titulo tema" name="title">
+        <div class="card-body">
+          <h6 class="card-title">* Detalla tu tema *</h6>
+          <input type="text" class="form-control-plaintext" [(ngModel)]="newPublication.content" placeholder="Texto...." aria-label="Texto..." name="content">
         </div>
       </div>
+      <button (click)="createPublication()" class="btn btn-outline-dark">Crear</button>
     </div>
   </div>
 </div>
+
 <footer class="footer">
   <div class="container">
     <div class="row">

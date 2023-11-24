@@ -38,16 +38,17 @@
 
 <div class="container mt-5" >
   <h1 class="text-center mb-5">Iniciar Sesión</h1>
-  <form>
-    <input type="email" name="email" placeholder="Correo electrónico">
-    <input type="password" name="password" placeholder="Contraseña">
+  <form (ngSubmit)="onLogin()">
+    <input type="email" [(ngModel)]="email" name="email" placeholder="Correo electrónico" required>
+    <input type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" required>
     <label for="terminos">
       <input type="checkbox" id="terminos" name="terminos" value="1" checked>
       Acepto los términos y condiciones
     </label>
-    <button type="submit" class="btn btn-primary" [routerLink]="['/home']">Iniciar Sesión</button>
+    <button type="submit" class="btn btn-primary" >Iniciar Sesión</button>
   </form>
 </div>
+
 
 
 <footer class="footer" style="background-color: #468189;">

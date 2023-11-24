@@ -11,7 +11,8 @@ import { PlanescomunidadComponent} from "./components/PlanesComunidad/planescomu
 import { PlanificacionComponent} from "./components/Planificacion/planificacion.component";
 import { SobrenosotrosComponent} from "./components/SobreNosotros/sobrenosotros.component";
 import {ForosComponent} from "./components/Foros/foros.component";
-
+import { CrearforosComponent} from "./components/CreaForo/crearforos.component";
+import { CarritoComponent} from "./components/Carrito/carrito.component";
 
 const routes: Routes =[
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -25,8 +26,9 @@ const routes: Routes =[
   { path: 'planes', component: PlanescomunidadComponent},
   { path: 'planificacion', component: PlanificacionComponent},
   { path: 'sobrenosotros', component: SobrenosotrosComponent},
-  { path: 'foro', component: ForosComponent}
-
+  { path: 'foro', component: ForosComponent},
+  { path: 'crearforo', component: CrearforosComponent},
+  { path: 'carro', component: CarritoComponent}
 
 ]
 @NgModule({

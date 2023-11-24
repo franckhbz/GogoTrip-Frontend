@@ -36,19 +36,21 @@
 </nav>
 
 <div class="container mt-5">
-  <h1 class="text-center mb-5">Registro</h1>
-  <div clas="row g-3">
-    <form action="/registro" method="post">
-      <input type="text" name="nombre" placeholder="Nombre">
-      <input type="text" name="apellidos" placeholder="Apellidos">
-      <input type="email" name="email" placeholder="Correo electrónico">
-      <input type="password" name="password" placeholder="Contraseña">
+  <h1 class="text-center mb-5">Registrate y vive la experiencia</h1>
+  <div class="row g-3">
+    <form (ngSubmit)="onRegister()">
+      <input type="text" [(ngModel)]="user.firstName" name="firstName" placeholder="Nombres" required>
+      <input type="text" [(ngModel)]="user.lastName" name="lastName" placeholder="Apellidos" required>
+      <input type="email" [(ngModel)]="user.email" name="email" placeholder="Correo electrónico" required>
+      <input type="password" [(ngModel)]="user.password" name="password" placeholder="Contraseña" required>
       <label for="terminos">
         <input type="checkbox" id="terminos" name="terminos" value="1" checked>
         Acepto los términos y condiciones
       </label>
-      <button type="submit" class="btn btn-primary" [routerLink]="['/iniciarsesion']">REGISTRAR</button>
+      <button type="submit" class="btn btn-primary" >REGISTRAR</button>
     </form>
+    <div style="text-align: center"><a class="navbar-brand" routerLink="/iniciarsesion" routerLinkActive="active">Ya tengo cuenta</a></div>
+
   </div>
 </div>
 <footer class="footer">

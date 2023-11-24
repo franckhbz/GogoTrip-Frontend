@@ -47,11 +47,25 @@
       </div>
     </div>
     <div class="col-auto">
-      <button class="btn btn-primary">Crear +</button>
+      <button class="btn btn-primary" [routerLink]="['/crearforo']">Crear +</button>
     </div>
   </div>
 
   <!-- Publicaciones -->
+  <div class="row" *ngFor="let publication of publications">
+    <div class="col-12">
+      <div class="card mb-3">
+        <div class="card-body">
+          <h5 class="card-title">{{ publication.title }}</h5>
+          <p class="card-text">{{ publication.content }}</p>
+          <div class="d-flex justify-content-between">
+            <small class="text-muted">Posteado por dora</small>
+            <small class="text-muted">0 Respuestas - 0 Visitas - 23/11/2023</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="row">
     <div class="col-12">
       <!-- Post 1 -->
@@ -73,11 +87,11 @@
       <!-- Post 2 -->
       <div class="card mb-3">
         <div class="card-body">
-          <h5 class="card-title">Machu Picchu: Secretos y recomendaciones para una visita inolvidable</h5>
-          <p class="card-text">Les comparto mi itinerario de viaje a la costa norte del Perú y busco sugerencias de lugares para visitar y actividades para hacer.</p>
+          <h5 class="card-title">Rutas menos conocidas en Perú: Lugares fuera de los circuitos turísticos</h5>
+          <p class="card-text">Les recomiendo visitar Huancaya, es un lugar hermoso y economico. Aqui, les comparto mis fotos:</p>
           <div class="d-flex justify-content-between">
-            <small class="text-muted">Posteado por Batmansindinero33</small>
-            <small class="text-muted">10 Respuestas - 110 Visitas - 12/09/2023</small>
+            <small class="text-muted">Posteado por Viajanteindie1</small>
+            <small class="text-muted">77 Respuestas - 451 Visitas - 11/09/2023</small>
           </div>
         </div>
       </div>
@@ -90,11 +104,11 @@
       <!-- Post 3 -->
       <div class="card mb-3">
         <div class="card-body">
-          <h5 class="card-title">Machu Picchu: Secretos y recomendaciones para una visita inolvidable</h5>
-          <p class="card-text">Les comparto mi itinerario de viaje a la costa norte del Perú y busco sugerencias de lugares para visitar y actividades para hacer.</p>
+          <h5 class="card-title">Culinaria peruana: ¿Dónde encontrar los mejores platos locales?</h5>
+          <p class="card-text">Busco recomendaciones sobre los lugares ideales para probar los mejores platos locales en diferentes regiones del país.</p>
           <div class="d-flex justify-content-between">
-            <small class="text-muted">Posteado por Batmansindinero33</small>
-            <small class="text-muted">10 Respuestas - 110 Visitas - 12/09/2023</small>
+            <small class="text-muted">Posteado por Gaston1919</small>
+            <small class="text-muted">34 Respuestas - 213 Visitas - 10/09/2023</small>
           </div>
         </div>
       </div>
@@ -107,17 +121,18 @@
       <!-- Post 4 -->
       <div class="card mb-3">
         <div class="card-body">
-          <h5 class="card-title">Machu Picchu: Secretos y recomendaciones para una visita inolvidable</h5>
-          <p class="card-text">Les comparto mi itinerario de viaje a la costa norte del Perú y busco sugerencias de lugares para visitar y actividades para hacer.</p>
+          <h5 class="card-title">Perú con niños: Destinos familiares y actividades divertidas</h5>
+          <p class="card-text">Estoy en la costa norte del Perú y busco sugerencias de lugares para visitar y actividades para hacer.</p>
           <div class="d-flex justify-content-between">
-            <small class="text-muted">Posteado por Batmansindinero33</small>
-            <small class="text-muted">10 Respuestas - 110 Visitas - 12/09/2023</small>
+            <small class="text-muted">Posteado por Elhomero20</small>
+            <small class="text-muted">67 Respuestas - 459 Visitas - 9/09/2023</small>
           </div>
         </div>
       </div>
 
     </div>
   </div>
+
 </div>
 
 <footer class="footer">
